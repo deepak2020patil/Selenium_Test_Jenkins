@@ -15,8 +15,15 @@ public class UITest {
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+	
 		driver.get("https://www.google.com/");
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		driver.manage().window().maximize();
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
