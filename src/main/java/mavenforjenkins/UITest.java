@@ -15,10 +15,8 @@ public class UITest {
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
-		
-		driver.get("https://www.google.com/");
-		Thread.sleep(10000);
 		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
