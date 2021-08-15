@@ -23,7 +23,7 @@ public class UITest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		System.out.println("Hello there");
 		driver.quit();
 }
 }
